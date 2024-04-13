@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body{
+    
+    height: auto;
+}
+
+body{
+    margin: 0;
+    background-color: #322B2B;
+}
+p{
+    color: white;
+}
+h1{
+    color: white;
+}
+.fon{
+    overflow: hidden;
+    display: block;
+    position: static;
+    width: 100%;
+    height: 66vh;
+    background-color: #663333;
+    text-align: center;
+
+}
+.fon h1{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 26vh;
+}
+.panel {
+    font-size: large;
+    font-family: 'Poppins', 'sans-serif';
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-color:transparent;
+}
+
+.panel h1{
+    font-weight: 900;
+    margin: 15px;
+    margin-left: 15%;
+}
+.panel p{
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    margin: 15px;
+    float: right;
+}
+
+.panel nav{
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.prom{
+    display: flex;
+    height: 33vh;
+    justify-content: center;
+    text-align: center;
+
+}
+.prom h1{
+    font-family: 'Montserrat';
+    align-self: center;
+}
+.nex_pannel{
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row; 
+    justify-content: center;
+    overflow:hidden;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media screen and (max-width: 1000px){
+    .nex_pannel{
+        flex-flow: column wrap;
+    }
+    .panel1 canvas, .panel2 canvas, .panel3 canvas{
+        width: 45%;
+    }
+    .contact_panel{
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    .contact_panel a, h1{
+        font-size: 50px;
+    }
+}
+
+.panel1, .panel2, .panel3{
+    margin: 15px;
+    display: table-row;
+    overflow: hidden;
+
+}
+.panel1 canvas, .panel2 canvas, .panel3 canvas{
+    min-width: 100%;
+    min-height: 600px;
+    max-width: 600px;
+    max-height: 900px;
+    width: 15vw;
+    height: 80vh;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.panel1 canvas{
+    background-color: #FF6363;
+}
+.panel2 canvas{
+    background-color: #4E9A95;
+}
+.panel3 canvas{
+    background-color: #F4E773;
+}
+.panel1 h1, .panel2 h1, .panel3 h1{
+    font-family: 'Montserrat';
+}
+
+.panel1 p, .panel2 p, .panel3 p{
+    color: rgb(191, 188, 188);
+    font-family: 'Poppins';
+}
+
+.contact_panel{
+    position: relative;
+    display: flex;
+    margin: 0;
+    min-height: 30vh;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+.contact_panel h1{
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: #000;
+}
+.contact_panel nav{
+    margin: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.contact_panel a{
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-decoration: none;
+    color: #3a3a3a;
+}
