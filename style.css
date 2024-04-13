@@ -26,8 +26,12 @@ a{
     height: 66vh;
     background-color: #663333;
     text-align: center;
+    animation: anum ease;
+    animation-timeline: scroll(root);
+
 
 }
+
 .fon h1{
     font-family: 'Montserrat';
     font-size: 50px;
@@ -104,12 +108,33 @@ a{
     }
 }
 
-.panel1, .panel2, .panel3{
+.panel1, .panel2, .panel3 {
     margin: 15px;
     display: table-row;
     overflow: hidden;
+    animation: fade-in ease;
+    animation-timeline: scroll(root);
 
 }
+
+
+@keyframes fade-in {
+    from{
+        opacity: 0%;
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(30px);
+        opacity: 100%;
+    }
+}
+@keyframes anum {
+    to{
+        transform: translatey(-300px);
+    }
+}
+
+
 .panel1 canvas, .panel2 canvas, .panel3 canvas{
     min-width: 100%;
     min-height: 600px;
