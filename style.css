@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html, body{
-    
+    scroll-behavior: smooth;
     height: auto;
 }
 
@@ -12,6 +12,10 @@ p{
     color: white;
 }
 h1{
+    color: white;
+}
+a{
+    text-decoration: none;
     color: white;
 }
 .fon{
@@ -48,7 +52,7 @@ h1{
     margin: 15px;
     margin-left: 15%;
 }
-.panel p{
+.panel a{
     font-weight: 500;
     position: relative;
     display: flex;
@@ -84,6 +88,9 @@ h1{
 }
 
 @media screen and (max-width: 1000px){
+    .panel{
+        font-size: 35px;
+    }
     .nex_pannel{
         flex-flow: column wrap;
     }
@@ -93,8 +100,6 @@ h1{
     .contact_panel{
         flex-flow: column wrap;
         text-align: center;
-    }
-    .contact_panel a, h1{
         font-size: 50px;
     }
 }
@@ -141,10 +146,10 @@ h1{
     width: 100%;
     background-color: aliceblue;
     justify-content: center;
+    font-size: 25px;
 }
 
 .contact_panel h1{
-    font-size: 25px;
     font-family: 'Montserrat';
     color: #000;
 }
@@ -154,7 +159,6 @@ h1{
     margin-right: 5%;
 }
 .contact_panel a{
-    font-size: 25px;
     font-family: 'Poppins';
     font-weight: 500;
     text-decoration: none;
